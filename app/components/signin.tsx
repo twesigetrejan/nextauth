@@ -17,7 +17,7 @@ export function SignIn() {
             // Only redirect if login was successful
             router.push("/");
         } else {
-            console.error("Failed to sign in:", result?.error);
+            console.error("Failed to sign in due to", result?.error);
         }
     };
 
